@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_DB: bank
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: HackMe228
+      POSTGRES_PASSWORD: HackMe
     ports:
       - "5433:5432"
 
@@ -16,7 +16,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/bank
       SPRING_DATASOURCE_USERNAME: postgres
-      SPRING_DATASOURCE_PASSWORD: HackMe228
+      SPRING_DATASOURCE_PASSWORD: HackMe
       SPRING_JPA_HIBERNATE_DDL_AUTO: update
       LOGGING_FILE_PATH: .
       LOGGING_FILE_NAME: app.log
